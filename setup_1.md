@@ -9,7 +9,7 @@ https://minikube.sigs.k8s.io/docs/start/
 # COMMANDS
 
 1. minikube start --vm-driver=hyperkit
-starts the cluster
+starts the cluste
 
 2. kubectl get nodes
 status of the nodes
