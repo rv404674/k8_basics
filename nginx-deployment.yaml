@@ -16,12 +16,15 @@ spec:
         app: nginx
     spec:
     # spec for pods
+    # blueprint for pods
       containers:
       - name: nginx
         image: nginx:1.16
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
-        - containerPort: 80
+        # this containerPort should match
+        # targetPort in nginx service file.
+        - containerPort: 8080
+
+# NOTE:
+# Good practice is to store these yaml files
+# with Code, sort of IAAC.
