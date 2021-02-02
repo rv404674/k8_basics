@@ -116,6 +116,9 @@ kubectl describe pod_name
 apply a config file
 update a config file - Just update the params and again do the apply
 
+NOTE:
+if you want o delete the deployment/service directly delete the file. Deployment will be gone , pods replicaset everything will be gone.
+
 ```bash
 kubectl apply -f k8/nginx-deployment.yaml
 kubectl delete -f file_name
