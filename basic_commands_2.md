@@ -46,7 +46,7 @@ kubectl create deployment mongo-depl --image=mongo
 
 1. 
 NOTE: if you want to see the details of a pod, how it started (more debugging info)
-```➜  ~ kubectl describe pod mongo-depl-5fd6b7d4b4kubectl describe ```
+```➜  ~ kubectl describe pod mongo-depl-5fd6b7d4b4kubectl ```
 
 2. 
 NOTE: to see streaming logs - log to console
@@ -94,6 +94,7 @@ NOTE: delete deployment will also delete the associated replicasets and pods
     kubectl create deployment nginx-depl --name=nginx
     kubectl edit deployment nginx-depl
     kubectl delete deployment nginx-depl
+    kubectl describe 
  ```
 
  2. Status of diff K8 components
@@ -109,7 +110,7 @@ get info about the pod (more debugging info)
 ```bash
 kubectl logs pod_name
 kubectl exec -it pod_name -- bin/bash
-kubectl describe pod_name
+kubectl describe pod pod_name
 ```
 
 4. Use config file for CRUD

@@ -8,7 +8,7 @@
 
 ***Rolling update*** - Rolling updates allow Deployments' update to take place with zero downtime by incrementally updating Pods instances with new ones
 
-***maxSurge*** - 25% (at mask there will only 125% desired pods are up)
+***maxSurge*** - 25% (at max there will only 125% desired pods are up)
 currentPods - 100, scale to 150
 K8 will ensure, that there is atmost 150*1.25 pods.
 
